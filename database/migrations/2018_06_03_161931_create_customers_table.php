@@ -17,6 +17,7 @@ class CreateCustomersTable extends Migration
             $table->increments('id');
             $table->string('name', 50);
             $table->string('address', 50);
+            $table->string('tax_id', 13);
             $table->timestamps();
         });
     }
